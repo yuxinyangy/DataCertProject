@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://www.baoquan.com/attestations-list?lang=zh -->
 <html lang="zh_cn">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta name="keywords" content="区块链存证、知识产权保护、网络维权、取证">
-    <meta name="description"
-          content="保全网基于区块链技术，提供数据权益保护一站式解决方案。我们专注于服务知识产权、电商维权、金融存证等领域，提供在线签名、数据存证、在线取证、在线出具司法鉴定意见书的完整流程，为上百万用户提供数据存证保全业务。是全国首例区块链存证案例的独家技术提供方。">
-    <title>保全网-区块链存证_在线取证_网络维权服务平台</title>
-    <script charset="utf-8" src="./js/b.js.下载"></script>
+    <title>软大-区块链存证_在线取证_网络维权服务平台</title>
+    <script charset="utf-8" src="./js/b.js"></script>
     <script src="./js/hm.js"/>
     <script src="./js/hm.js(1)"/>
     <script src="./js/hm.js(2)"/>
@@ -146,7 +141,7 @@
                                     </li>
                                     <div class="notify-container">
                                         <div class="user">
-                                            <div class="user-content"><span class="phone">19970349328</span><i
+                                            <div class="user-content"><span class="phone">{{.Phone}}</span><i
                                                         class="iconfont font-down"></i></div>
                                             <ul><a href="https://www.baoquan.com/setting?lang=zh">
                                                     <li>账户中心</li>
@@ -205,7 +200,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a class="to-add" href="https://www.baoquan.com/attestations?lang=zh"
+                                <a class="to-add" href="save_cunzheng"
                                    style="top: -20px;">新增存证</a></div>
                             <hr>
                             <div class="ctn">
@@ -416,14 +411,14 @@
                 <footer class="user-center-footer"><p
                             style="display: flex; align-items: center; justify-content: center;">
                         <!-- react-text: 1441 -->Copyright&nbsp;©&nbsp;<!-- /react-text --><!-- react-text: 1442 -->
-                        浙江数秦科技有限公司<!-- /react-text --><!-- react-text: 1443 -->&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;
-                        <!-- /react-text --><!-- react-text: 1444 -->浙ICP备15025396号-1<!-- /react-text -->
+                        江西软件技术有限公司<!-- /react-text --><!-- react-text: 1443 -->&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;
+                        <!-- /react-text --><!-- react-text: 1444 -->赣ICP备15025396号-1<!-- /react-text -->
                         <!-- react-text: 1445 -->&nbsp;&nbsp;&nbsp;&nbsp;<!-- /react-text --><a
                                 href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602007260"
                                 target="_blank"
                                 style="display: flex; align-items: center; color: rgb(102, 102, 102);"><img
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABjFBMVEVHcEzoxWzs04visWL++9725r7dpFXitWH89t337Lr52Ifov3f25qPcsX7gqlb06Zzu46rewXLlvHCdaFjvvl/crGrgvov387jz6ZLt3oDkvFnTk3DKhFvZr4LDfz7oxnzv2X//+dD/74ati3q0lH7Rrnbou1Doulr/1ljVPCLqv1fuzGbVHhjbSScFAWMAAXgBAW3ryFzksVHWj0nSBQnlmDpzd4Dpx2PdmEbrsEnw13TrwWDdn0U8GTzVazK5kVqYeljIIhDMAALKPSO9BA79xU3UxXXrXyNtf4/90GjqcDKRinm+TiUABn756XDepEz1x1f74mzVkjzThT3TLhyrq4LjrUr8lzlRNlHdhDX1fy6ZXzNdXG9NB0TXYTHQFg3XdTjyy27pgj69qXHekET/ulXBvIN0Y2HPuX+clYT2qjwZN5DuvlDx02nYnljNrFJWTm/JWSrZAAZgHlCxDg79KwoAG45pAjaEj5n9LRTEazOBWDqEaUriqVfbbTc2Gk2njVnOeDq1gD8ACJEMcLh/AAAAJnRSTlMA7JHrCGHK/hxBusIqreg9f/XQ+dLgnAKr4fQUXUic++xMvtHLbxvU4Y4AAAFpSURBVBjTY2CAAA5WFWVWDnEGJMDJKxxdXeMgzKuIEGOxt42ucvdiD7W1Z4GJcXBHOESZaOqahIdGcEFFeQTrY6J0dEJ04108zeoZecCC/N6+De4mIfHxmk7uaQbeYEEOEW/9Jt0iHU1NHSdNNwMzJZAbVLMyfe2jTAqDtFLivdwMMjUEgCrFTDOa0119nO0S6owD0/XTssSAKkUjE7MNfJJ0neM0veL0sq1MRYEq+RpTPfRLSuN8EpIqXQw8XIOBguK8Np4ZZbEljo6Ous7l+hme6kxAQe6UWs8KAz292GI9A30zDfYwbnEGcfk8Y9PEDAeP5PyYAjNtUwsjBaCZrOr+xnYBGhqulhp+GpHGRoacINezSmkFB2mrG6lr51oYazNyQsJN1NBQXcvQWlvLRt3KnI8fHKhcflbsRuph1moW/urq5n4SkNBkklILyLFUs9QKUDOXFICGvri0jBwbGx8zGzeTLFgIAGesR4U7iOtUAAAAAElFTkSuQmCC"
-                                    alt="" style="width: 12px;"><!-- react-text: 1448 -->&nbsp;浙公网安备&nbsp;33010602007260号
+                                    alt="" style="width: 12px;"><!-- react-text: 1448 -->&nbsp;赣公网安备&nbsp;33010602007260号
                             <!-- /react-text --></a></p></footer>
             </div>
             <span class="redux-toastr" aria-live="assertive"><span><div class="top-left"></div><div

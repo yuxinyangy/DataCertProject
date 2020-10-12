@@ -11,5 +11,5 @@ type MainController struct {
 默认显示的页面：用户注册页面
  */
 func (c *MainController) Get() {
-	c.TplName="register.html"
+	c.TplName="login.html"
 }

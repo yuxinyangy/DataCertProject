@@ -35,6 +35,6 @@ func (l *LoginController) Post() {
 	}
 	//登入成功,跳转项目核心功能页面(home.html)
 	l.Data["Phone"] = u.Phone
-	l.TplName="home.html"//{{.Phone}}
+	l.TplName="home.html"//
 
 }

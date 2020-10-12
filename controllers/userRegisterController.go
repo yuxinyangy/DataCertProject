@@ -9,6 +9,10 @@ type RegisterController struct {
 	beego.Controller
 }
 
+func (r *RegisterController) Get()  {
+	r.TplName="register.html"
+}
+
 func (r *RegisterController) Post()  {
 	//1.解析请求数据
 	var user models.User
