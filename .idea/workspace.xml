@@ -4,6 +4,9 @@
     <list default="true" id="bc602135-43b2-4736-9fc2-7c0401c58ded" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/userSaveProveController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userSaveProveController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/save_prove.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,21 +91,21 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="1098" y="248" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1602314112518" />
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1602604132698">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1602604156567">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602604132698" />
-    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1602604132697">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602604156567" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1602604156566">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602604132697" />
-    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1602604132697">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602604156566" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1602604156566">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602604132697" />
-    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1602604132698">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602604156566" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1602604156567">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602604132698" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602604156567" />
   </component>
 </project>
