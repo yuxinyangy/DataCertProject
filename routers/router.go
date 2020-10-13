@@ -21,8 +21,6 @@ func init() {
     beego.Router("/register_register",&controllers.RegisterController{})
     //重置密码界面转登入
     beego.Router("/forget_login",&controllers.LoginController{})
-    //新增存证
-    beego.Router("/save_cunzheng",&controllers.SaveProveController{})
     //存证
     beego.Router("/upload",&controllers.SaveProveController{})
 }

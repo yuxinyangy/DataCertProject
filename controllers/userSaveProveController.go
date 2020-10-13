@@ -10,11 +10,6 @@ import (
 type SaveProveController struct {
 	beego.Controller
 }
-
-func (s *SaveProveController) Get()  {
-	s.TplName="save_prove.html"
-}
-
 func (s *SaveProveController) Post(){
 	f,h,_ :=s.GetFile("uploadOne")
 	fileName := h.Filename
@@ -26,5 +21,5 @@ func (s *SaveProveController) Post(){
 	fmt.Println("文件名称：",fileName)
 	f.Close()
 	s.SaveToFile("uploadOne",path.Join("static/upload",fileName))
-	s.TplName="save_prove.html"
+	s.TplName="home.html"
 }

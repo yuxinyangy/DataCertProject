@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc602135-43b2-4736-9fc2-7c0401c58ded" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/userForgetController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/userSaveProveController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/Setting-4599a.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserAttAdd-ab4c6.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserResetPasswordForm-4747f.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/forget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/save_prove.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userLoginController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userLoginController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userRegisterController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userRegisterController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/app-f03c3be68c19ce58d4ff.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/app-f03c3be68c19ce58d4ff.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userSaveProveController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userSaveProveController.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +48,7 @@
       <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\img" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.save_prove.html">
+  <component name="RunManager" selected="Go Build.go build DataCertProject">
     <configuration name="go build DataCertProject" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="DataCertProject" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -103,21 +88,21 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="1098" y="248" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1602314112518" />
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1602499627868">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1602604132698">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602499627868" />
-    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1602499627868">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1602604132698" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1602604132697">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602499627868" />
-    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1602499627868">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1602604132697" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1602604132697">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602499627868" />
-    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1602499627868">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1602604132697" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1602604132698">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602499627868" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1602604132698" />
   </component>
 </project>
