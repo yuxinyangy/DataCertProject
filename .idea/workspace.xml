@@ -4,9 +4,6 @@
     <list default="true" id="bc602135-43b2-4736-9fc2-7c0401c58ded" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/userSaveProveController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userSaveProveController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/save_prove.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +72,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="639" y="67" key="#Inspections" timestamp="1602775229048">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="639" y="67" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1602775229048" />
     <state x="606" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602398169348">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
