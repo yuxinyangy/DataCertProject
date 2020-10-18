@@ -1,10 +1,5 @@
 package blockchain
 
-import (
-	"time"
-	"DataCertProject/util"
-)
-
 /**
  *  区块结构体的定义
  */
@@ -20,14 +15,14 @@ type Block struct {
 /**
  * 新建一个区块实例，并返回该区块
  */
-func NewBlock(height int, data []byte, prevHash []byte) (Block) {
-	block := Block{
-		Height:    height + 1,
-		TimeStamp: time.Now().Unix(),
-		Data:      data,
-		PrevHash:  prevHash,
-		Version:   "0x01",
-	}
-	block.Hash = util.SHA256HashBlock(block)
-	return block
-}
+//func NewBlock(height int, data []byte, prevHash []byte) (Block) {
+//	block := Block{
+//		Height:    height + 1,
+//		TimeStamp: time.Now().Unix(),
+//		Data:      data,
+//		PrevHash:  prevHash,
+//		Version:   "0x01",
+//	}
+//	block.Hash = util.SHA256HashBlock(block)
+//	return block
+//}

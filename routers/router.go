@@ -23,4 +23,6 @@ func init() {
     beego.Router("/forget_login",&controllers.LoginController{})
     //存证
     beego.Router("/upload",&controllers.SaveProveController{})
+    //在认证数据列表页面，点击新增认证按钮，跳转"新增页面"
+    beego.Router("/upload_file.html",&controllers.SaveProveController{})
 }
