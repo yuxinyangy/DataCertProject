@@ -23,6 +23,7 @@ type Block struct {
  * 新建一个区块实例，并返回该区块
  */
 func NewBlock(height int64, data []byte, prevHash []byte) (Block) {
+	//构建一个block实例，用于生成区块
 	block := Block{
 		Height:    height + 1,
 		TimeStamp: time.Now().Unix(),
@@ -30,6 +31,16 @@ func NewBlock(height int64, data []byte, prevHash []byte) (Block) {
 		PrevHash:  prevHash,
 		Version:   "0x01",
 	}
+
+	//2.为新生成的block,寻找合适的nonce值
+	pow := NewPoW(block)
+	nonce :=pow.Run()
+
+	block.Nonce =nonce
+
+
+
+
 	//调用util.SHA256Hash进行hash计算
 	heightBytes,_ :=util.IntToBytes(block.Height)
 	timeBytes,_ := util.IntToBytes(block.TimeStamp)

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc602135-43b2-4736-9fc2-7c0401c58ded" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/util/convert.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/pow.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DataCertProject1" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DataCertProject" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -100,26 +102,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="386" y="23" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1602495162292" />
-    <state x="1098" y="248" key="FileChooserDialogImpl" timestamp="1603099813781">
+    <state x="798" y="32" key="FileChooserDialogImpl" timestamp="1603202639148">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="1098" y="248" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603099813781" />
-    <state width="1493" height="142" key="GridCell.Tab.0.bottom" timestamp="1603100606464">
+    <state x="798" y="32" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603202639148" />
+    <state width="1465" height="226" key="GridCell.Tab.0.bottom" timestamp="1603202963835">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="142" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603100606464" />
-    <state width="1493" height="142" key="GridCell.Tab.0.center" timestamp="1603100606464">
+    <state width="1465" height="226" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603202963835" />
+    <state width="1465" height="226" key="GridCell.Tab.0.center" timestamp="1603202963834">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="142" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603100606464" />
-    <state width="1493" height="142" key="GridCell.Tab.0.left" timestamp="1603100606464">
+    <state width="1465" height="226" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603202963834" />
+    <state width="1465" height="226" key="GridCell.Tab.0.left" timestamp="1603202963834">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="142" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603100606464" />
-    <state width="1493" height="142" key="GridCell.Tab.0.right" timestamp="1603100606464">
+    <state width="1465" height="226" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603202963834" />
+    <state width="1465" height="226" key="GridCell.Tab.0.right" timestamp="1603202963834">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="142" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603100606464" />
+    <state width="1465" height="226" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603202963834" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1603194089095">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603194089095" />
     <state x="491" y="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603100566467">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
