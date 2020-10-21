@@ -12,6 +12,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DataCertProject" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -38,7 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DataCertProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BoltDBDemo" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -102,30 +105,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="386" y="23" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1602495162292" />
-    <state x="798" y="32" key="FileChooserDialogImpl" timestamp="1603202639148">
+    <state x="798" y="30" key="FileChooserDialogImpl" timestamp="1603278924089">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="798" y="32" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603202639148" />
-    <state width="1465" height="226" key="GridCell.Tab.0.bottom" timestamp="1603202963835">
+    <state x="798" y="30" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603278924089" />
+    <state width="756" height="158" key="GridCell.Tab.0.bottom" timestamp="1603266153685">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1465" height="226" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603202963835" />
-    <state width="1465" height="226" key="GridCell.Tab.0.center" timestamp="1603202963834">
+    <state width="756" height="158" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603266153685" />
+    <state width="756" height="158" key="GridCell.Tab.0.center" timestamp="1603266153685">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1465" height="226" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603202963834" />
-    <state width="1465" height="226" key="GridCell.Tab.0.left" timestamp="1603202963834">
+    <state width="756" height="158" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603266153685" />
+    <state width="756" height="158" key="GridCell.Tab.0.left" timestamp="1603266153685">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1465" height="226" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603202963834" />
-    <state width="1465" height="226" key="GridCell.Tab.0.right" timestamp="1603202963834">
+    <state width="756" height="158" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603266153685" />
+    <state width="756" height="158" key="GridCell.Tab.0.right" timestamp="1603266153685">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1465" height="226" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603202963834" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1603194089095">
+    <state width="756" height="158" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603266153685" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1603266846533">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603194089095" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603266846533" />
     <state x="491" y="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603100566467">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

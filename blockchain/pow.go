@@ -4,6 +4,7 @@ import (
 	"DataCertProject/util"
 	"bytes"
 	"crypto/sha256"
+	"fmt"
 	"math/big"
 )
 
@@ -32,9 +33,10 @@ func NewPoW(block Block) ProofOfWork {
 	return pow
 }
 
-func (p ProofOfWork) Run() int64{
+func (p ProofOfWork) Run()( []byte,int64){
 	var nonce int64
 	bigBlock := new(big.Int)
+	var block256Hash []byte
 	for {
 		block :=p.Block
 		heightBytes,_ :=util.IntToBytes(block.Height)
@@ -51,13 +53,16 @@ func (p ProofOfWork) Run() int64{
 		},[]byte{})
 		sha256Hash := sha256.New()
 		sha256Hash.Write(blockBytes)
-		block256Hash := sha256Hash.Sum(nil)
+		block256Hash = sha256Hash.Sum(nil)
 
+		fmt.Printf("挖矿中，当前尝试nonce值:%d\n",nonce)
 		bigBlock = bigBlock.SetBytes(block256Hash)
+		//fmt.Printf("目标值: %x\n",p.Target)
+		//fmt.Printf("hash值:%x\n",bigBlock)
 		if p.Target.Cmp(bigBlock)==1{
 			break
 		}
 		nonce++
 	}
-	return nonce
+	return block256Hash,nonce
 }

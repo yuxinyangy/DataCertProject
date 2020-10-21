@@ -1,8 +1,8 @@
 package blockchain
 
 import (
-	"DataCertProject/util"
 	"bytes"
+	"encoding/gob"
 	"time"
 )
 
@@ -34,24 +34,51 @@ func NewBlock(height int64, data []byte, prevHash []byte) (Block) {
 
 	//2.为新生成的block,寻找合适的nonce值
 	pow := NewPoW(block)
-	nonce :=pow.Run()
+	blockHash,nonce :=pow.Run()
 
-	block.Nonce =nonce
+	block.Nonce = nonce
+	block.Hash = blockHash
 
 
 
 
 	//调用util.SHA256Hash进行hash计算
-	heightBytes,_ :=util.IntToBytes(block.Height)
-	timeBytes,_ := util.IntToBytes(block.TimeStamp)
-	versionBytes := util.StringToBytes(block.Version)
-	blockBytes := bytes.Join([][]byte{
-		heightBytes,
-		timeBytes,
-		block.Data,
-		block.PrevHash,
-		versionBytes,
-	},[]byte{})
-	block.Hash = util.SHA256Hash(blockBytes)
+	//heightBytes,_ :=util.IntToBytes(block.Height)
+	//timeBytes,_ := util.IntToBytes(block.TimeStamp)
+	//versionBytes := util.StringToBytes(block.Version)
+	//blockBytes := bytes.Join([][]byte{
+	//	heightBytes,
+	//	timeBytes,
+	//	block.Data,
+	//	block.PrevHash,
+	//	versionBytes,
+	//},[]byte{})
+	//block.Hash = util.SHA256Hash(blockBytes)
 	return block
+}
+
+/*
+区块序列化
+ */
+
+func (bk Block) Serialize() ([]byte,error){
+	buff := new(bytes.Buffer)
+	err := gob.NewEncoder(buff).Encode(bk)
+	if err != nil {
+		return nil,err
+	}
+	return buff.Bytes(),nil
+}
+
+/*
+区块的反序列化
+ */
+
+func DeSerialize(data []byte) (*Block,error) {
+	var block Block
+	err := gob.NewDecoder(bytes.NewReader(data)).Decode(&block)
+	if err != nil {
+		return nil,err
+	}
+	return &block,nil
 }
