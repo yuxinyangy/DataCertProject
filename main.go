@@ -5,6 +5,8 @@ import (
 	"DataCertProject/db_mysql"
 	"DataCertProject/models"
 	_ "DataCertProject/routers"
+	"encoding/json"
+	"encoding/xml"
 	"fmt"
 	"github.com/astaxie/beego"
 )
@@ -17,8 +19,14 @@ func main() {
 	}
 	fmt.Println("内存中的数据User1",user1)
 
-	//jsonBytes,_ := json.Marshal(user1)
-	//xmlByte,_:=xml.Marshal()
+	_, _ = json.Marshal(user1)
+	xmlBytes, _ := xml.Marshal(user1)
+	fmt.Println(string(xmlBytes))
+
+	var user2 models.User
+	xml.Unmarshal(xmlBytes, &user2)
+	fmt.Println("反序列化的User2:", user2)
+	return
 
 
 
