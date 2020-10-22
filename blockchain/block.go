@@ -18,6 +18,13 @@ type Block struct {
 	Version   string //版本号
 	Nonce     int64  //随机数,用于pow工作量证明算法计算
 }
+/*
+生成创世区块，返回区块信息
+ */
+func CreateGenesisBlock() Block {
+	block :=NewBlock(0,[]byte{},[]byte{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0})
+	return block
+}
 
 /**
  * 新建一个区块实例，并返回该区块
