@@ -6,10 +6,7 @@ import (
 	_ "DataCertProject/routers"
 	"fmt"
 	"github.com/astaxie/beego"
-	"github.com/bolt-master"
 )
-
-var BUCKET_NAME  = "blocks"
 
 func main() {
 	//user1 := models.User{
@@ -35,35 +32,35 @@ func main() {
 	fmt.Println(block)
 	fmt.Printf("区块Hash：%x",block.Hash)
 
-	db,err:=bolt.Open("chain.db",0600,nil)
-	if err != nil {
-		panic(err.Error())
-	}
-	defer db.Close()
-	//操作chain.db文件
-	db.Update(func(tx *bolt.Tx) error {
-		var tong  *bolt.Bucket
-		tong = tx.Bucket([]byte(BUCKET_NAME))
-	    if tong == nil {
-			tong,err = tx.CreateBucket([]byte(BUCKET_NAME))
-			if err != nil {
-				return err
-			}
-
-	    }
-	    //先查看获取看桶中是否已包含要保存的区块
-		lastBlock := tong.Get([]byte("lasthash"))
-		blockHash,err := block.Serialize()
-		if err != nil {
-			return nil
-		}
-		if lastBlock == nil {
-			tong.Put(block.Hash,blockHash)
-			tong.Put([]byte("lasthash"),blockHash)
-		}
-	    return nil
-	})
-	return
+	//db,err:=bolt.Open("chain.db",0600,nil)
+	//if err != nil {
+	//	panic(err.Error())
+	//}
+	//defer db.Close()
+	////操作chain.db文件
+	//db.Update(func(tx *bolt.Tx) error {
+	//	var tong  *bolt.Bucket
+	//	tong = tx.Bucket([]byte(BUCKET_NAME))
+	//   if tong == nil {
+	//		tong,err = tx.CreateBucket([]byte(BUCKET_NAME))
+	//		if err != nil {
+	//			return err
+	//		}
+	//
+	//   }
+	//   //先查看获取看桶中是否已包含要保存的区块
+	//	lastBlock := tong.Get([]byte("lastHash"))
+	//	blockHash,err := block.Serialize()
+	//	if err != nil {
+	//		return nil
+	//	}
+	//	if lastBlock == nil {
+	//		tong.Put(block.Hash,blockHash)
+	//		tong.Put([]byte("lastHash"),blockHash)
+	//	}
+	//   return nil
+	//})
+	//return
 	//1.链接数据库
 	db_mysql.ConnectDB()
 	//设置静态资源文件
