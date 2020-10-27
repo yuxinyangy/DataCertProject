@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc602135-43b2-4736-9fc2-7c0401c58ded" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/yuxinyangy/DataCertProject.git" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1ig0HobLX7HS6EnOGYHSCdzKhEt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,18 +46,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DataCertProject" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\models" />
-      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\js" />
       <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\img" />
       <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\models" />
+      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\img" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build DataCertProject">
@@ -87,6 +93,27 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="639" y="67" key="#Inspections" timestamp="1602775229048">
       <screen x="0" y="0" width="1536" height="864" />
@@ -104,10 +131,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="386" y="23" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1602495162292" />
-    <state x="798" y="30" key="FileChooserDialogImpl" timestamp="1603333952327">
+    <state x="862" y="100" width="581" height="670" maximized="true" key="DiffContextDialog" timestamp="1603770197379">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="798" y="30" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603333952327" />
+    <state x="862" y="100" width="581" height="670" maximized="true" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1603770197379" />
+    <state x="798" y="30" key="FileChooserDialogImpl" timestamp="1603795421707">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="798" y="30" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603795421707" />
     <state width="776" height="185" key="GridCell.Tab.0.bottom" timestamp="1603335969726">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -124,10 +155,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="776" height="185" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603335969726" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1603266846533">
+    <state x="0" y="0" key="SettingsEditor" timestamp="1603768773694">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603266846533" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603768773694" />
     <state x="491" y="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603100566467">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
