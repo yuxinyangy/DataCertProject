@@ -56,7 +56,6 @@ func NewBlockChain() BlockChain  {
  */
 func (bc BlockChain) SaveData(data []byte)  {
 	db := bc.BoltDb
-	
 	var lastBlock *Block
 	//先查询chain.db中存储的最新的区块
 	db.View(func(tx *bolt.Tx) error {
@@ -73,7 +72,15 @@ func (bc BlockChain) SaveData(data []byte)  {
 	newBlock := NewBlock(lastBlock.Height+1,data,lastBlock.Hash)
 	//更新chain.db
 	db.Update(func(tx *bolt.Tx) error {
-
+		bucket := tx.Bucket([]byte(BUCKET_NAME))
+		if bucket == nil {
+			panic("boltdb未创建，请重试！")
+		}
+		blockBytes,err :=newBlock.Serialize()
+		if err != nil {
+			return nil
+		}
+		bucket.Put(data,blockBytes)
 		return nil
 	})
 	return
