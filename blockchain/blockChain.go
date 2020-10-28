@@ -2,8 +2,8 @@ package blockchain
 
 import (
 	"errors"
-	"fmt"
 	"github.com/bolt-master"
+	"math/big"
 )
 
 //桶的名称，该桶用于装区块信息
@@ -22,6 +22,75 @@ var CHAINDB = "chain.db"
 type BlockChain struct {
 	LastHash []byte//最新区块的hash
 	BoltDb *bolt.DB
+}
+
+/*
+查询所有的区块信息，并返回。将所有的区块放入到切片中
+ */
+
+func (bc BlockChain) QueryAllBlocks() []*Block  {
+	blocks := make([]*Block,0)
+	db := bc.BoltDb
+	db.View(func(tx *bolt.Tx) error {
+		bucket := tx.Bucket([]byte(BUCKET_NAME))
+		if bucket == nil {
+			panic("查询数据出错")
+		}
+		eachKey := bc.LastHash
+		preHashBig := new(big.Int)
+		zeroBig := big.NewInt(0)//0的大整数
+		for{
+			eachBlockBytes := bucket.Get(eachKey)
+			//反序列化后得到的每一个区块
+			eachBlock,_ := DeSerialize(eachBlockBytes)
+			//将遍历到的每一个区块链结构体指针放入到[]byte容器中
+			blocks = append(blocks,eachBlock)
+
+			preHashBig.SetBytes(eachBlock.PrevHash)
+			if preHashBig.Cmp(zeroBig) == 0 {//通过if条件语句判断区块链遍历是否已到创世区块，如果到创世区块，跳出循环
+				break
+			}
+			//否则，继续向前遍历
+			eachKey = eachBlock.PrevHash
+		}
+		return nil
+	})
+	return blocks
+}
+
+
+/*
+通过区块的高度查询某个具体的区块，返回区块实例
+ */
+func (bc BlockChain) QueryBlockHeight(height int64)*Block{
+	if height <0 {//如果目标高度小于0，则说明参数不合法
+		return nil
+	}
+	var block *Block
+	db := bc.BoltDb
+	db.View(func(tx *bolt.Tx) error {
+		bucket := tx.Bucket([]byte(BUCKET_NAME))
+		if bucket == nil {
+			panic("查询数据失败")
+		}
+		hashKey := bc.LastHash
+		for{
+			lastBlockBytes := bucket.Get(hashKey)
+			eachBlock,_ := DeSerialize(lastBlockBytes)
+			if eachBlock.Height < height {//给定的数字超出区块的高度
+				break
+			}
+			if eachBlock.Height == height{//高度和目标一致，已经找到目标区块，结束循环
+				block = eachBlock
+				break
+			}
+			//遍历的当前的区块的高度与目标高度不一致，继续往前遍历
+			//以eachBlock.PrevHash为key，使用Get获取上一个区块的数据
+			hashKey = eachBlock.PrevHash
+			}
+		return nil
+	})
+	return block
 }
 
 
@@ -46,7 +115,6 @@ func NewBlockChain() BlockChain  {
 			//1.创建创世区块
 			genesis :=CreateGenesisBlock()//创世区块
 			//2.创建一个存储区块数据的文件
-			fmt.Printf("genesis的Hash值：%x\n",genesis.Hash)
 			bl = BlockChain{
 				LastHash: genesis.Hash,
 				BoltDb:   db,
