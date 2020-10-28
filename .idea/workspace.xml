@@ -1,67 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc602135-43b2-4736-9fc2-7c0401c58ded" name="默认更改列表" comment="">
+    <list default="true" id="cfdf11a8-0594-478c-b2a5-4397a5ab6f6a" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/pow.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="DataCertProject" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Go File" />
-      </list>
-    </option>
-  </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="hiddenUrls">
-      <set>
-        <option value="https://github.com/yuxinyangy/DataCertProject.git" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1ig0HobLX7HS6EnOGYHSCdzKhEt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1jUed6KWHq9ycw7X63ry5rmLAEH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DataCertProject" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="D:/DataCertProject" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\js" />
-      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\img" />
-      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\models" />
-      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\img" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Go Build.go build DataCertProject">
-    <configuration name="go build DataCertProject" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build DataCertProject (1)">
+    <configuration name="go build DataCertProject (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="DataCertProject" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
@@ -70,100 +42,61 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build DataCertProject" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="DataCertProject" />
       <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$/" />
       <package value="DataCertProject" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="save_prove.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DataCertProject/views/save_prove.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build DataCertProject" />
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="JavaScript Debug.save_prove.html" />
+        <item itemvalue="Go Build.go build DataCertProject (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="639" y="67" key="#Inspections" timestamp="1602775229048">
+    <state x="223" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603863242778">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="639" y="67" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1602775229048" />
-    <state x="606" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602398169348">
+    <state x="223" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1603863242778" />
+    <state x="609" y="241" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603863214243">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="606" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1602398169348" />
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602494759533">
+    <state x="609" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1603863214243" />
+    <state x="495" y="102" key="#go_build_DataCertProject" timestamp="1603863271348">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1602494759533" />
-    <state x="386" y="23" key="CommitChangelistDialog2" timestamp="1602495162292">
+    <state x="495" y="102" key="#go_build_DataCertProject/0.0.1536.864@0.0.1536.864" timestamp="1603863271348" />
+    <state x="499" y="135" key="FileChooserDialogImpl" timestamp="1603867176356">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="386" y="23" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1602495162292" />
-    <state x="762" y="0" width="781" height="870" key="DiffContextDialog" timestamp="1603798829315">
+    <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603867176356" />
+    <state width="1483" height="167" key="GridCell.Tab.0.bottom" timestamp="1603867453750">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="762" y="0" width="781" height="870" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1603798829315" />
-    <state x="798" y="30" key="FileChooserDialogImpl" timestamp="1603795421707">
+    <state width="1483" height="167" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603867453750" />
+    <state width="1483" height="167" key="GridCell.Tab.0.center" timestamp="1603867453750">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="798" y="30" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1603795421707" />
-    <state width="776" height="185" key="GridCell.Tab.0.bottom" timestamp="1603335969726">
+    <state width="1483" height="167" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603867453750" />
+    <state width="1483" height="167" key="GridCell.Tab.0.left" timestamp="1603867453749">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="776" height="185" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1603335969726" />
-    <state width="776" height="185" key="GridCell.Tab.0.center" timestamp="1603335969725">
+    <state width="1483" height="167" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603867453749" />
+    <state width="1483" height="167" key="GridCell.Tab.0.right" timestamp="1603867453750">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="776" height="185" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1603335969725" />
-    <state width="776" height="185" key="GridCell.Tab.0.left" timestamp="1603335969725">
+    <state width="1483" height="167" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603867453750" />
+    <state x="272" y="78" key="SettingsEditor" timestamp="1603863207546">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="776" height="185" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1603335969725" />
-    <state width="776" height="185" key="GridCell.Tab.0.right" timestamp="1603335969726">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="776" height="185" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1603335969726" />
-    <state x="0" y="0" key="SettingsEditor" timestamp="1603768773694">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="0" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603768773694" />
-    <state x="491" y="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603100566467">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="491" y="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.864@0.0.1536.864" timestamp="1603100566467" />
+    <state x="272" y="78" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1603863207546" />
   </component>
 </project>

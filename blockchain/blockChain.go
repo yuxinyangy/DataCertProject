@@ -1,11 +1,17 @@
 package blockchain
 
-import "github.com/bolt-master"
+import (
+	"errors"
+	"fmt"
+	"github.com/bolt-master"
+)
 
 //桶的名称，该桶用于装区块信息
 var BUCKET_NAME  = "blocks"
 //表示最新的区块的key名
 var LAST_KEY = "lasthash"
+
+var CHAINDB = "chain.db"
 /*
 区块链结构体实例:用于描述或表示代表一条区块链
 * 该条区块链包括以下功能:
@@ -21,31 +27,45 @@ type BlockChain struct {
 
 
 func NewBlockChain() BlockChain  {
-	//1.创建创世区块
-	genesis :=CreateGenesisBlock()//创世区块
-	//2.创建一个存储区块数据的文件
-	db,err:=bolt.Open("chain.db",0600,nil)
+	//0.打开存储区块数据的chain.db文件
+	db,err:=bolt.Open(CHAINDB,0600,nil)
 	if err != nil {
 		panic(err.Error())
 	}
-	bl := BlockChain{
-		LastHash: genesis.Hash,
-		BoltDb:   db,
-	}
-	//3.把新创建的创世区块存入到chain.db当中的一个桶中
+	var bl BlockChain
 	db.Update(func(tx *bolt.Tx) error {
-		bucket,err :=tx.CreateBucket([]byte(BUCKET_NAME))
-		if err != nil {
-			panic(err.Error())
+		bucket := tx.Bucket([]byte(BUCKET_NAME))
+		if bucket == nil {
+			bucket,err = tx.CreateBucket([]byte(BUCKET_NAME))
+			if err != nil {
+				panic(err.Error())
+			}
 		}
-		serialBlock,err := genesis.Serialize()
-		if err != nil {
-			panic(err.Error())
+		lastHash := bucket.Get([]byte(LAST_KEY))
+		if len(lastHash) == 0 {//无创世区块
+			//1.创建创世区块
+			genesis :=CreateGenesisBlock()//创世区块
+			//2.创建一个存储区块数据的文件
+			fmt.Printf("genesis的Hash值：%x\n",genesis.Hash)
+			bl = BlockChain{
+				LastHash: genesis.Hash,
+				BoltDb:   db,
+			}
+			genesisBytes,_ := genesis.Serialize()
+			bucket.Put(genesis.Hash,genesisBytes)
+			bucket.Put([]byte(LAST_KEY),genesis.Hash)
+		}else{//有创世区块
+			lastHash := bucket.Get([]byte(LAST_KEY))
+			lastBlockBytes := bucket.Get(lastHash)
+			lastBlock,err := DeSerialize(lastBlockBytes)
+			if err != nil {
+				panic("读取区块链数据失败")
+			}
+			bl = BlockChain{
+				LastHash: lastBlock.Hash,
+				BoltDb:   db,
+			}
 		}
-		//把创世区块存入到桶中
-		bucket.Put(genesis.Hash,serialBlock)
-		//更新指向最新区块的Hash值
-		bucket.Put([]byte(LAST_KEY),genesis.Hash)
 		return nil
 	})
 	return bl
@@ -54,17 +74,18 @@ func NewBlockChain() BlockChain  {
 /*
 调用BlockChain的该SaveBlock方法，该方法可以将一个生成的新区块块保存到chain.db文件中
  */
-func (bc BlockChain) SaveData(data []byte)  {
+func (bc BlockChain) SaveData(data []byte)(Block,error)  {
 	db := bc.BoltDb
+	var e error
 	var lastBlock *Block
 	//先查询chain.db中存储的最新的区块
 	db.View(func(tx *bolt.Tx) error {
 		bucket := tx.Bucket([]byte(BUCKET_NAME))
 		if bucket == nil {
-			panic("boltdb未创建，请重试！")
+			e := errors.New("boltdb未创建，请重试！")
+			return e
 		}
-		lastHash := bucket.Get([]byte(LAST_KEY))
-		lastBlockBytes := bucket.Get(lastHash)
+		lastBlockBytes := bucket.Get(bc.LastHash)
 		lastBlock,_ =DeSerialize(lastBlockBytes)
 		return nil
 	})
@@ -73,15 +94,14 @@ func (bc BlockChain) SaveData(data []byte)  {
 	//更新chain.db
 	db.Update(func(tx *bolt.Tx) error {
 		bucket := tx.Bucket([]byte(BUCKET_NAME))
-		if bucket == nil {
-			panic("boltdb未创建，请重试！")
-		}
-		blockBytes,err :=newBlock.Serialize()
-		if err != nil {
-			return nil
-		}
-		bucket.Put(data,blockBytes)
+		//区块序列化
+		newBlockBytes,_ :=newBlock.Serialize()
+		//把区块信息保存到boltdb中
+		bucket.Put(newBlock.Hash,newBlockBytes)
+		//更新代表最后一个区块hash值的记录
+		bucket.Put([]byte(LAST_KEY),newBlock.Hash)
+		bc.LastHash = newBlock.Hash
 		return nil
 	})
-	return
+	return newBlock,e
 }

@@ -4,7 +4,6 @@ import (
 	"DataCertProject/util"
 	"bytes"
 	"crypto/sha256"
-	"fmt"
 	"math/big"
 )
 
@@ -55,7 +54,7 @@ func (p ProofOfWork) Run()( []byte,int64){
 		sha256Hash.Write(blockBytes)
 		block256Hash = sha256Hash.Sum(nil)
 
-		fmt.Printf("挖矿中，当前尝试nonce值:%d\n",nonce)
+		//fmt.Printf("挖矿中，当前尝试nonce值:%d\n",nonce)
 		bigBlock = bigBlock.SetBytes(block256Hash)
 		//fmt.Printf("目标值: %x\n",p.Target)
 		//fmt.Printf("hash值:%x\n",bigBlock)

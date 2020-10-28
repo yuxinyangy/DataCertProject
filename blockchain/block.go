@@ -32,7 +32,7 @@ func CreateGenesisBlock() Block {
 func NewBlock(height int64, data []byte, prevHash []byte) (Block) {
 	//构建一个block实例，用于生成区块
 	block := Block{
-		Height:    height + 1,
+		Height:    height,
 		TimeStamp: time.Now().Unix(),
 		Data:      data,
 		PrevHash:  prevHash,
