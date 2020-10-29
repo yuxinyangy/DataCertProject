@@ -4,14 +4,14 @@ import (
 	"DataCertProject/blockchain"
 	"DataCertProject/db_mysql"
 	_ "DataCertProject/routers"
-	"fmt"
 	"github.com/astaxie/beego"
 )
 
 func main() {
 	//实例化一个区块链实例
-	bc := blockchain.NewBlockChain()
-	fmt.Printf("最新区块的Hash值:%x\n",bc.LastHash)
+	//bc := blockchain.NewBlockChain()
+	//fmt.Printf("最新区块的Hash值:%x\n",bc.LastHash)
+	//return
 	//block,err := bc.SaveData([]byte("这里存储上链的数据信息"))
 	//if err != nil {
 	//	fmt.Println(err.Error())
@@ -26,15 +26,23 @@ func main() {
 	//}
 	//fmt.Println("区块的高度是:",block1.Height)
 	//fmt.Println("区块存的信息是:",string(block1.Data))
-	blocks := bc.QueryAllBlocks()
-	if len(blocks) == 0 {
-		fmt.Println("暂未查询到区块数据")
-		return
-	}
-	for _,block :=range blocks{
-		fmt.Printf("高度:%d,哈希:%x,Prev哈希:%x\n",block.Height,block.Hash,block.PrevHash)
-	}
-	return
+	//blocks := bc.QueryAllBlocks()
+	//if len(blocks) == 0 {
+	//	fmt.Println("暂未查询到区块数据")
+	//	return
+	//}
+	//for _,block :=range blocks{
+	//	fmt.Printf("高度:%d,哈希:%x,Prev哈希:%x\n",block.Height,block.Hash,block.PrevHash)
+	//}
+	//return
+
+
+
+	//准备一条区块链
+	blockchain.NewBlockChain()
+
+
+
 	db_mysql.ConnectDB()
 	//设置静态资源文件
 	beego.SetStaticPath("/js","./static/js")

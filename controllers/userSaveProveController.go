@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"DataCertProject/blockchain"
 	"DataCertProject/models"
 	"DataCertProject/util"
 	"bufio"
@@ -50,13 +51,12 @@ func (s *SaveProveController) Post(){
 	//s.TplName="home.html"
 	saveFile,err :=os.OpenFile(uploadDir,os.O_RDWR|os.O_CREATE,777)
 	writer := bufio.NewWriter(saveFile)
-	file_size,err :=io.Copy(writer,file)
+	_,err =io.Copy(writer,file)
 	if err != nil {
 		fmt.Println(err.Error())
 		s.TplName="error.html"
 		return
 	}
-	fmt.Println(file_size)
 	defer saveFile.Close()
 	//计算文件的hash
 	hashFile,err := os.Open(uploadDir)
@@ -74,6 +74,13 @@ func (s *SaveProveController) Post(){
 	_, err = record.SaveRecord()
 	if err != nil {
 		fmt.Println(err.Error())
+		s.TplName="error.html"
+		return
+	}
+
+	//新增逻辑：将要认证的文件hash值及个人实名信息，保存到区块链上，即上链
+	_,err =blockchain.CHAIN.SaveData([]byte(hash))
+	if err != nil {
 		s.TplName="error.html"
 		return
 	}

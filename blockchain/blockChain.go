@@ -12,6 +12,8 @@ var BUCKET_NAME  = "blocks"
 var LAST_KEY = "lasthash"
 
 var CHAINDB = "chain.db"
+
+var CHAIN  BlockChain
 /*
 区块链结构体实例:用于描述或表示代表一条区块链
 * 该条区块链包括以下功能:
@@ -136,6 +138,8 @@ func NewBlockChain() BlockChain  {
 		}
 		return nil
 	})
+	//为全局变量赋值
+	CHAIN = bl
 	return bl
 }
 
