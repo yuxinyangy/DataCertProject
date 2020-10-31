@@ -143,6 +143,37 @@ func NewBlockChain() BlockChain  {
 	return bl
 }
 
+func (bc BlockChain) QueryBlockByCertId(cert_id []byte) (*Block,error){
+	var block *Block
+	db := bc.BoltDb
+	var err error
+	db.View(func(tx *bolt.Tx) error {
+		bucket := tx.Bucket([]byte(BUCKET_NAME))
+		if bucket == nil {
+			err = errors.New("查询区块数据遇到错误")
+		}
+		//桶存在
+		eachHash := bucket.Get([]byte(LAST_KEY))
+		eachBig := new(big.Int)
+		zeroBig := big.NewInt(0)
+		for{
+			eachBlockBytes := bucket.Get(eachHash)
+			eachBlock,_ := DeSerialize(eachBlockBytes)
+			if string(eachBlock.Data) == string(cert_id){
+				block =eachBlock
+				break
+			}
+			eachBig.SetBytes(eachBlock.PrevHash)
+			if eachBig.Cmp(zeroBig) == 0 {
+				break
+			}
+		}
+		return nil
+	})
+
+	return block,err
+}
+
 /*
 调用BlockChain的该SaveBlock方法，该方法可以将一个生成的新区块块保存到chain.db文件中
  */
