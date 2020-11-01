@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdf11a8-0594-478c-b2a5-4397a5ab6f6a" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/certDetailController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/CertRecord.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/app-5e0455372927b43eec8b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/app-de629dfeac93cb9584b8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/common-5e0455372927b43eec8b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/common-de629dfeac93cb9584b8.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain.db" beforeDir="false" afterPath="$PROJECT_DIR$/chain.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cert_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/cert_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +41,13 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DataCertProject(2)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/css" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\css" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build DataCertProject (1)">
     <configuration name="go build DataCertProject (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -82,26 +91,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="495" y="102" key="#go_build_DataCertProject/0.0.1536.864@0.0.1536.864" timestamp="1603863271348" />
-    <state x="499" y="135" key="FileChooserDialogImpl" timestamp="1604154876862">
+    <state x="499" y="135" key="FileChooserDialogImpl" timestamp="1604210915561">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604154876862" />
-    <state width="803" height="158" key="GridCell.Tab.0.bottom" timestamp="1604019665787">
+    <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604210915561" />
+    <state width="1483" height="161" key="GridCell.Tab.0.bottom" timestamp="1604211794336">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="803" height="158" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604019665787" />
-    <state width="803" height="158" key="GridCell.Tab.0.center" timestamp="1604019665787">
+    <state width="1483" height="161" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604211794336" />
+    <state width="1483" height="161" key="GridCell.Tab.0.center" timestamp="1604211794336">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="803" height="158" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604019665787" />
-    <state width="803" height="158" key="GridCell.Tab.0.left" timestamp="1604019665787">
+    <state width="1483" height="161" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604211794336" />
+    <state width="1483" height="161" key="GridCell.Tab.0.left" timestamp="1604211794336">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="803" height="158" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604019665787" />
-    <state width="803" height="158" key="GridCell.Tab.0.right" timestamp="1604019665787">
+    <state width="1483" height="161" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604211794336" />
+    <state width="1483" height="161" key="GridCell.Tab.0.right" timestamp="1604211794336">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="803" height="158" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604019665787" />
+    <state width="1483" height="161" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604211794336" />
     <state x="272" y="78" key="SettingsEditor" timestamp="1603863207546">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -114,6 +123,11 @@
           <url>file://$PROJECT_DIR$/main.go</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/controllers/certDetailController.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
