@@ -16,20 +16,20 @@ type SaveProveController struct {
 	beego.Controller
 }
 
-func (s *SaveProveController) Get()  {
+func (s *SaveProveController) Get() {
 	phone := s.GetString("phone")
 	s.Data["Phone"] = phone
 	s.TplName = "home.html"
 }
 
-func (s *SaveProveController) Post(){
+func (s *SaveProveController) Post() {
 	//标题
 	fileTitle := s.Ctx.Request.PostFormValue("upload_title")
 	phone := s.Ctx.Request.PostFormValue("phone")
 	//文件
-	file,header,err :=s.GetFile("upload_file")
-	if err != nil{
-		s.TplName="error.html"
+	file, header, err := s.GetFile("upload_file")
+	if err != nil {
+		s.TplName = "error.html"
 		return
 	}
 	//关闭文件
@@ -37,9 +37,9 @@ func (s *SaveProveController) Post(){
 
 	fmt.Println("自定义的文件标题:", fileTitle)
 	fmt.Println("文件名称:", header.Filename)
-	fmt.Println("文件的大小:", header.Size)//字节大小
+	fmt.Println("文件的大小:", header.Size) //字节大小
 	//保存文件到本地目录
-	uploadDir :="./static/upload/"+header.Filename
+	uploadDir := "./static/upload/" + header.Filename
 	//arr :=strings.Split(fileName,":")
 	//if len(arr)>1{
 	//	index := len(arr)-1
@@ -49,19 +49,19 @@ func (s *SaveProveController) Post(){
 	//f.Close()
 	//s.SaveToFile("uploadOne",path.Join("static/upload",fileName))
 	//s.TplName="home.html"
-	saveFile,err :=os.OpenFile(uploadDir,os.O_RDWR|os.O_CREATE,777)
+	saveFile, err := os.OpenFile(uploadDir, os.O_RDWR|os.O_CREATE, 777)
 	writer := bufio.NewWriter(saveFile)
-	_,err =io.Copy(writer,file)
+	_, err = io.Copy(writer, file)
 	if err != nil {
 		fmt.Println(err.Error())
-		s.TplName="error.html"
+		s.TplName = "error.html"
 		return
 	}
 	defer saveFile.Close()
 	//计算文件的hash
-	hashFile,err := os.Open(uploadDir)
+	hashFile, err := os.Open(uploadDir)
 	defer hashFile.Close()
-	hash,err := util.MD5HashReader(hashFile)
+	hash, err := util.MD5HashReader(hashFile)
 
 	//保存到数据库中
 	record := models.UploadRecord{}
@@ -74,14 +74,14 @@ func (s *SaveProveController) Post(){
 	_, err = record.SaveRecord()
 	if err != nil {
 		fmt.Println(err.Error())
-		s.TplName="error.html"
+		s.TplName = "error.html"
 		return
 	}
 
 	//新增逻辑：将要认证的文件hash值及个人实名信息，保存到区块链上，即上链
-	_,err =blockchain.CHAIN.SaveData([]byte(hash))
+	_, err = blockchain.CHAIN.SaveData([]byte(hash))
 	if err != nil {
-		s.TplName="error.html"
+		s.TplName = "error.html"
 		return
 	}
 	//从数据库中读取phone用户对应的所有认证数据记录
@@ -89,7 +89,7 @@ func (s *SaveProveController) Post(){
 
 	//根据文件保存结果，返回相应的提示信息或者页面跳转
 	if err != nil {
-		s.TplName="error.html"
+		s.TplName = "error.html"
 		return
 	}
 	fmt.Println(records)

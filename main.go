@@ -36,18 +36,13 @@ func main() {
 	//}
 	//return
 
-
-
 	//准备一条区块链
 	blockchain.NewBlockChain()
 
-
-
 	db_mysql.ConnectDB()
 	//设置静态资源文件
-	beego.SetStaticPath("/js","./static/js")
-	beego.SetStaticPath("/img","./static/img")
-	beego.SetStaticPath("/css","./static/css")
+	beego.SetStaticPath("/js", "./static/js")
+	beego.SetStaticPath("/img", "./static/img")
+	beego.SetStaticPath("/css", "./static/css")
 	beego.Run()
 }
-

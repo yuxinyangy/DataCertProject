@@ -27,9 +27,10 @@ func MD5HashReader(reader io.Reader) (string, error) {
 	hashBytes := md5Hash.Sum(nil)
 	return hex.EncodeToString(hashBytes), nil
 }
+
 /*
 对数据进行hash计算
- */
+*/
 func SHA256Hash(data []byte) []byte {
 	//1、对数据进行sha256
 	sha256Hash := sha256.New()

@@ -7,18 +7,18 @@ import (
 
 //上传文件记录 结构体定义
 type UploadRecord struct {
-	Id        int
-	FileName  string
-	FileSize  int64
-	FileCert  string //认证号
-	FileTitle string
-	CertTime  int64
+	Id            int
+	FileName      string
+	FileSize      int64
+	FileCert      string //认证号
+	FileTitle     string
+	CertTime      int64
 	FormatCerTime string //格式化时间格式，该字段只在前端占时时用
-	Phone     string //对应的用户的phone
+	Phone         string //对应的用户的phone
 }
 
 //保存上传记录到数据库
-func (u UploadRecord) SaveRecord() (int64,error)  {
+func (u UploadRecord) SaveRecord() (int64, error) {
 	rs, err := db_mysql.Db.Exec("insert into upload_record(file_name, file_size, file_cert, file_title, cert_time, phone) "+
 		"values(?,?,?,?,?,?) ",
 		u.FileName,
@@ -50,9 +50,8 @@ func QueryRecordByPhone(phone string) ([]UploadRecord, error) {
 			return nil, err
 		}
 		//时间转换 record.CerTime
-		record.FormatCerTime = util.TimeFormat(record.CertTime,0,util.TIME_FORMAT_FOUR)
+		record.FormatCerTime = util.TimeFormat(record.CertTime, 0, util.TIME_FORMAT_FOUR)
 		records = append(records, record)
 	}
 	return records, nil
 }
-

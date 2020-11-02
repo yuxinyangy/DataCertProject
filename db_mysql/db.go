@@ -8,7 +8,7 @@ import (
 
 var Db *sql.DB
 
-func ConnectDB()  {
+func ConnectDB() {
 	//1.读取conf配置信息
 	config := beego.AppConfig
 	dbDriver := config.String("db_driverName")
