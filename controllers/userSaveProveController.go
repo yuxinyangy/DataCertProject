@@ -63,6 +63,8 @@ func (s *SaveProveController) Post() {
 	defer hashFile.Close()
 	hash, err := util.MD5HashReader(hashFile)
 
+
+	t :=time.Now().Unix()
 	//保存到数据库中
 	record := models.UploadRecord{}
 	record.FileName = header.Filename
@@ -79,7 +81,33 @@ func (s *SaveProveController) Post() {
 	}
 
 	//新增逻辑：将要认证的文件hash值及个人实名信息，保存到区块链上，即上链
-	_, err = blockchain.CHAIN.SaveData([]byte(hash))
+	//①准备认证数据的用户相关的数据
+	us,err := models.QueryUserByPhone(phone)
+	if err != nil {
+		fmt.Println(err.Error())
+		s.Ctx.WriteString("抱歉，数据认证失败，请重试")
+		return
+	}
+	tformat := util.TimeFormat(t,0,util.TIME_FORMAT_ONE)
+	certhash,_ :=util.SHA256HashReader(hashFile)
+	certhashstr := string([]byte(certhash))
+	certidstr :=  string([]byte(hash))
+	certRecord := models.CertRecord{
+		CertHash:   []byte(certhash),
+		CertHashStr: certhashstr ,
+		CertIdStr: certidstr ,
+		CertId:     []byte(hash),
+		CertAuthor: us.Name,
+		Phone:      us.Phone,
+		AuthorCard: us.Card,
+		FileName:   header.Filename,
+		FileSize: header.Size,
+		CertTime:   t,
+		CertTimeFormat: tformat,
+	}
+	//序列化
+	certBytes,err := certRecord.SerializeRecord()
+	_, err = blockchain.CHAIN.SaveData(certBytes)
 	if err != nil {
 		s.TplName = "error.html"
 		return

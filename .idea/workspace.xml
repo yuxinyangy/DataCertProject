@@ -2,28 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdf11a8-0594-478c-b2a5-4397a5ab6f6a" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain/blockChain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/pow.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chain.db" beforeDir="false" afterPath="$PROJECT_DIR$/chain.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain.db.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/certDetailController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/certDetailController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userForgetController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userForgetController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userLoginController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userLoginController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userRegisterController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userRegisterController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/userSaveProveController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userSaveProveController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_mysql/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db_mysql/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/CertRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/CertRecord.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/uploadRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/uploadRecord.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/CertRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/certRecord.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/default_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/tests/default_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/convert.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/convert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/upload/微信图片_20190928141120.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/util/hash.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/hash.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/time.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/cert_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/cert_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +50,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/DataCertProject(2)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="http.certificates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -118,30 +107,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604231790449" />
-    <state width="1483" height="161" key="GridCell.Tab.0.bottom" timestamp="1604322721297">
+    <state width="1483" height="157" key="GridCell.Tab.0.bottom" timestamp="1604395645191">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="161" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604322721297" />
-    <state width="1483" height="161" key="GridCell.Tab.0.center" timestamp="1604322721297">
+    <state width="1483" height="157" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604395645191" />
+    <state width="1483" height="157" key="GridCell.Tab.0.center" timestamp="1604395645190">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="161" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604322721297" />
-    <state width="1483" height="161" key="GridCell.Tab.0.left" timestamp="1604322721296">
+    <state width="1483" height="157" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604395645190" />
+    <state width="1483" height="157" key="GridCell.Tab.0.left" timestamp="1604395645190">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="161" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604322721296" />
-    <state width="1483" height="161" key="GridCell.Tab.0.right" timestamp="1604322721297">
+    <state width="1483" height="157" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604395645190" />
+    <state width="1483" height="157" key="GridCell.Tab.0.right" timestamp="1604395645191">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="161" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604322721297" />
+    <state width="1483" height="157" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604395645191" />
     <state x="531" y="83" key="RollbackChangesDialog" timestamp="1604232494095">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="531" y="83" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1604232494095" />
-    <state x="272" y="0" key="SettingsEditor" timestamp="1604231794703">
+    <state x="272" y="0" key="SettingsEditor" timestamp="1604370539181">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="272" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1604231794703" />
+    <state x="272" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1604370539181" />
     <state x="423" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1604232512165">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -154,10 +143,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1604232496851" />
-    <state x="489" y="340" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604322717073">
+    <state x="489" y="340" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604373490702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="489" y="340" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.864@0.0.1536.864" timestamp="1604322717073" />
+    <state x="489" y="340" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.864@0.0.1536.864" timestamp="1604373490702" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

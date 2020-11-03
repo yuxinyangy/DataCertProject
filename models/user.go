@@ -10,6 +10,9 @@ type User struct {
 	Id       int    `form:"id"`
 	Phone    string `form:"phone"`
 	Password string `form:"password"`
+	Name     string `form:"name"`
+	Card     string `form:"card"`
+	Sex      string `form:"sex"`
 }
 
 /*
@@ -53,4 +56,17 @@ func (u User) QueryUser() (*User, error) {
 		}
 		return &u, nil
 	}
+}
+/**
+ *根据用户的phone信息查询
+ */
+
+func QueryUserByPhone(phone string) (*User,error){
+	row := db_mysql.Db.QueryRow("select phone,name,card,sex from user where phone = ?",phone)
+	var user User
+	err := row.Scan(&user.Phone,&user.Name,&user.Card,&user.Sex)
+	if err != nil {
+		return nil,err
+	}
+	return &user,err
 }

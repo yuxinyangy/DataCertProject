@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"DataCertProject/blockchain"
+	"DataCertProject/models"
 	"fmt"
 	"github.com/astaxie/beego"
-	"strings"
 )
 
 type CertDetailController struct {
@@ -26,7 +26,8 @@ func (c *CertDetailController) Get() {
 		c.Ctx.WriteString("抱歉,未查询到链上数据，请重试")
 	}
 	//certId = hex.EncodeToString(block.Data)
-	c.Data["CertId"] = strings.ToUpper(string(block.Data))
+	certRecord,err :=models.DeSerializeRecord(block.Data)
+	c.Data["CertRecord"] = certRecord
 
 	//2.跳转页面
 	c.TplName = "cert_detail.html"

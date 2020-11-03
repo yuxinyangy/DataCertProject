@@ -28,6 +28,17 @@ func MD5HashReader(reader io.Reader) (string, error) {
 	return hex.EncodeToString(hashBytes), nil
 }
 
+func SHA256HashReader(reader io.Reader) (string, error) {
+	bytes,err := ioutil.ReadAll(reader)
+	if err != nil {
+		fmt.Println(err.Error())
+		return "",err
+	}
+	sh256Hash := sha256.New()
+	sh256Hash.Write(bytes)
+	return  hex.EncodeToString(sh256Hash.Sum(nil)),nil
+}
+
 /*
 对数据进行hash计算
 */

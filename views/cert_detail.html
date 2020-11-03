@@ -111,7 +111,7 @@
                                             <div class="hash-mob"
                                                  style="display: flex; align-items: center; flex-wrap: wrap;">
                                         <p style="color: rgb(19, 142, 254); overflow-wrap: break-word; word-break: normal; max-width: 100%; display: inline-block;">
-                                            f59557bd67b580eae810fee610f7fd3904c4ed728025c256afb7d5da1a566a3c</p><span><div
+                                            {{.CertRecord.CertHashStr}}</p><span><div
                                                     class="el-popover" style="width: 320px; display: none;"><div
                                                         class="el-popover__title">存证文件HASH</div><div><p
                                                             style="color: rgb(51, 51, 51);">存证文件HASH是通过SHA256算法计算后得出的文件HASH值，与原始存证文件唯一对应。该HASH值将被实时写入认证链，确保文件的不可篡改</p></div><div
@@ -163,22 +163,22 @@
     <div>
         <div style="word-break:break-all;word-wrap:break-word;" class="page cert-cover theme-3">
             <h2 class="cert-cover-title">电子数据认证书</h2>
-            <h3 class="cert-cover-bq-number">认证号：<span ref="common.attestation_no" class="xfield">{{.CertId}}</span>
+            <h3 class="cert-cover-bq-number">认证号：<span ref="common.attestation_no" class="xfield">{{.CertRecord.CertIdStr}}</span>
             </h3>
             <div class="cert-cover-content">
                 <table>
                     <tbody>
                     <tr>
                         <td>认证人：</td>
-                        <td><span ref="att.name" class="xfield">余鑫洋</span>&nbsp;</td>
+                        <td><span ref="att.name" class="xfield">{{.CertRecord.CertAuthor}}</span>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>联系方式：</td>
-                        <td><span ref="user.phone_number" class="xfield">199****9328</span>&nbsp;</td>
+                        <td><span ref="user.phone_number" class="xfield">{{.CertRecord.Phone}}</span>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>身份证：</td>
-                        <td><span ref="att.idCard" class="xfield">362334************</span>&nbsp;</td>
+                        <td><span ref="att.idCard" class="xfield">{{.CertRecord.AuthorCard}}</span>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>认证平台：</td>
@@ -186,15 +186,15 @@
                     </tr>
                     <tr>
                         <td>文件名称：</td>
-                        <td><span ref="att.fileName" class="xfield">WechatIMG300.png</span>&nbsp;</td>
+                        <td><span ref="att.fileName" class="xfield">{{.CertRecord.FileName}}</span>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>文件大小：</td>
-                        <td><span ref="att.fileSize" class="xfield">390866</span>&nbsp;字节</td>
+                        <td><span ref="att.fileSize" class="xfield">{{.CertRecord.FileSize}}</span>&nbsp;字节</td>
                     </tr>
                     <tr>
                         <td>认证时间：</td>
-                        <td><span ref="common.attestation_at" class="xfield">2020-10-08 08:08:14</span>&nbsp;</td>
+                        <td><span ref="common.attestation_at" class="xfield">{{.CertRecord.CertTimeFormat}}</span>&nbsp;</td>
                     </tr>
                     </tbody>
                 </table>
