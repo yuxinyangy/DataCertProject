@@ -83,27 +83,22 @@ func (s *SaveProveController) Post() {
 	//新增逻辑：将要认证的文件hash值及个人实名信息，保存到区块链上，即上链
 	//①准备认证数据的用户相关的数据
 	us,err := models.QueryUserByPhone(phone)
+	fmt.Println("用户的信息：", us.Name, us.Card)
 	if err != nil {
 		fmt.Println(err.Error())
 		s.Ctx.WriteString("抱歉，数据认证失败，请重试")
 		return
 	}
-	tformat := util.TimeFormat(t,0,util.TIME_FORMAT_ONE)
 	certhash,_ :=util.SHA256HashReader(hashFile)
-	certhashstr := string([]byte(certhash))
-	certidstr :=  string([]byte(hash))
 	certRecord := models.CertRecord{
-		CertHash:   []byte(certhash),
-		CertHashStr: certhashstr ,
-		CertIdStr: certidstr ,
 		CertId:     []byte(hash),
+		CertHash:   []byte(certhash),
 		CertAuthor: us.Name,
-		Phone:      us.Phone,
 		AuthorCard: us.Card,
+		Phone:      us.Phone,
 		FileName:   header.Filename,
-		FileSize: header.Size,
+		FileSize:   header.Size,
 		CertTime:   t,
-		CertTimeFormat: tformat,
 	}
 	//序列化
 	certBytes,err := certRecord.SerializeRecord()
@@ -120,7 +115,6 @@ func (s *SaveProveController) Post() {
 		s.TplName = "error.html"
 		return
 	}
-	fmt.Println(records)
 	s.Data["Records"] = records
 	s.Data["Phone"] = phone
 	s.TplName = "list_record.html"

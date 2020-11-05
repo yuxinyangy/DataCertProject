@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"DataCertProject/models"
+	"fmt"
 	"github.com/astaxie/beego"
 )
 
@@ -15,6 +16,7 @@ func (u *UserKycController) Get(){
 func (u *UserKycController) Post()  {
 	var user models.User
 	err := u.ParseForm(&user)
+	fmt.Println("user:",user)
 	if err != nil {
 		u.Ctx.WriteString("用户认证数据解析失败，请重试")
 		return

@@ -1,13 +1,13 @@
 package util
 
 import (
-	"github.com/aliyun/alibaba-cloud-sdk-go/services/dysmsapi"
 	"encoding/json"
+	"fmt"
+	"github.com/aliyun/alibaba-cloud-sdk-go/services/dysmsapi"
 	"github.com/astaxie/beego"
 	"math/rand"
-	"time"
 	"strings"
-	"fmt"
+	"time"
 )
 
 const SMS_TPL_REGISTER = "SMS_205393604" //用户注册模板号
@@ -31,8 +31,7 @@ type SmsResult struct {
  * code：验证码
  * templateType: 模板类型
  */
-func SendSms(phone string, code string, templateType string) (*SmsResult, error) {
-
+func SendSms(phone string, code string, templateType string) (*SmsResult, error)  {
 	config := beego.AppConfig
 	accessKey := config.String("sms_access_key")
 	accessKeySecret := config.String("sms_access_secret")
