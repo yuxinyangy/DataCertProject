@@ -2,45 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdf11a8-0594-478c-b2a5-4397a5ab6f6a" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/app-5e0455372927b43eec8b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/app-de629dfeac93cb9584b8.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/app-f03c3be68c19ce58d4ff.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/common-5e0455372927b43eec8b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/common-de629dfeac93cb9584b8.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/common-f03c3be68c19ce58d4ff.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/WeChatImg-8lg-GUI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sign-in-bg-5JlvAfR.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/HomeNew-f8f62.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/Notification-0a19e.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/Setting-4599a.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserAttAdd-ab4c6.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserAttList-538b0.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserChart-515e7.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserLoginForm-86fb5.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserRegistryForm-ef59c.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserResetPasswordForm-4747f.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/WxPayPhoneBind-d1407.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app-f03c3be68c19ce58d4ff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/common-f03c3be68c19ce58d4ff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/data-set.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/es6-shim-8e9077312e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hm.js(1)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hm.js(2)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-02053ebe83.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/pc_nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/poll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/push.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/reload.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/set-cookies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/certDetailController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/certDetailController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userKycController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userKycController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/userSaveProveController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userSaveProveController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/sentsms.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/sentsms.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user_kyc.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/user_kyc.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +50,7 @@
       <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\css" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build DataCertProject (1)">
     <configuration name="go build DataCertProject (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="DataCertProject" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -130,7 +93,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
