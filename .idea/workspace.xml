@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdf11a8-0594-478c-b2a5-4397a5ab6f6a" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/sendSmsController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/smsLoginController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/smsRecord.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/app-c7b496447f00d1b093df.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/app-c7b496447f00d1b093df.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/login_sms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/login_sms_submit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user_kyc.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/user_kyc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain.db" beforeDir="false" afterPath="$PROJECT_DIR$/chain.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/sentsms.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/sentSms.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +51,15 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="D:/DataCertProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\js" />
       <recent name="C:\Users\遗城落梦\go\src\DataCertProject\static\css" />
+      <recent name="C:\Users\遗城落梦\go\src\DataCertProject\views" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build DataCertProject (1)">
@@ -81,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build DataCertProject (1)" />
         <item itemvalue="Go Build.go build DataCertProject" />
       </list>
     </recent_temporary>
@@ -118,10 +131,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="477" y="287" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1604232304918" />
-    <state x="499" y="135" key="FileChooserDialogImpl" timestamp="1604575612414">
+    <state x="499" y="135" key="FileChooserDialogImpl" timestamp="1604919106628">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604575612414" />
+    <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604919106628" />
     <state width="1483" height="157" key="GridCell.Tab.0.bottom" timestamp="1604575289625">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
