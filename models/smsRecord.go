@@ -1,6 +1,8 @@
 package models
 
-import "DataCertProject/db_mysql"
+import (
+	"DataCertProject/db_mysql"
+)
 
 type SmsRecord struct {
 	BizId     string `form:"biz_id"`  //业务号
@@ -15,15 +17,15 @@ type SmsRecord struct {
  *该方法根据BizId，phone以及code条件查询出符合条件的验证码记录
  */
 
-func (s SmsRecord) QuerySmsByBizId() (*SmsRecord, error) {
+func (s SmsRecord) QuerySmsByBizId() (*SmsRecord,error) {
 	var sms SmsRecord
-	row := db_mysql.Db.QueryRow("select biz_id,phone,code,status,message,timestamp from sms_record where biz_id = ? and phone=? and code=?",
+	row := db_mysql.Db.QueryRow("select biz_id, phone, code, status, message, timestamp from sms_record where biz_id = ? and phone = ? and code = ?",
 		s.BizId, s.Phone, s.Code)
-	err := row.Scan(&sms.BizId, &sms.Phone, &sms.Code, &sms.Status, &sms.Message, &sms.TimeStamp)
+	err := row.Scan(&sms.BizId,&sms.Phone,&sms.Code,&sms.Status,&sms.Message,&sms.TimeStamp)
 	if err != nil {
-		return nil, err
+		return nil,err
 	}
-	return &s, nil
+	return &sms,nil
 }
 
 /*

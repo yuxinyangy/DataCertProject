@@ -44,7 +44,7 @@ func (s *SmsLoginController) Post() {
 	}
 	//b.查到了结果且在有效期内：登入成功跳转页面
 	now := time.Now().Unix()
-	if now -codeRecord.TimeStamp > 1000*60*3{
+	if now-codeRecord.TimeStamp > 1000*60*5{
 		//超时了
 		s.Ctx.WriteString("验证码已失效，请重新获取验证码!")
 		//s.TplName="login_sms.html"

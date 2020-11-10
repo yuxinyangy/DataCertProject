@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfdf11a8-0594-478c-b2a5-4397a5ab6f6a" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/sendSmsController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/smsLoginController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/smsRecord.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/app-c7b496447f00d1b093df.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app-c7b496447f00d1b093df.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login_sms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login_sms_submit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chain.db" beforeDir="false" afterPath="$PROJECT_DIR$/chain.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/sendSmsController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/sendSmsController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/smsLoginController.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/smsLoginController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/smsRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/smsRecord.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/sentsms.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/sentSms.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +46,7 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
+    <property name="last_opened_file_path" value="D:/DataCertProject" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -131,26 +126,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="477" y="287" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1604232304918" />
-    <state x="499" y="135" key="FileChooserDialogImpl" timestamp="1604919106628">
+    <state x="499" y="135" key="FileChooserDialogImpl" timestamp="1604939262300">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604919106628" />
-    <state width="1483" height="157" key="GridCell.Tab.0.bottom" timestamp="1604575289625">
+    <state x="499" y="135" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604939262300" />
+    <state width="1483" height="157" key="GridCell.Tab.0.bottom" timestamp="1604940942433">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="157" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604575289625" />
-    <state width="1483" height="157" key="GridCell.Tab.0.center" timestamp="1604575289625">
+    <state width="1483" height="157" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1604940942433" />
+    <state width="1483" height="157" key="GridCell.Tab.0.center" timestamp="1604940942433">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="157" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604575289625" />
-    <state width="1483" height="157" key="GridCell.Tab.0.left" timestamp="1604575289625">
+    <state width="1483" height="157" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1604940942433" />
+    <state width="1483" height="157" key="GridCell.Tab.0.left" timestamp="1604940942433">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="157" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604575289625" />
-    <state width="1483" height="157" key="GridCell.Tab.0.right" timestamp="1604575289625">
+    <state width="1483" height="157" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1604940942433" />
+    <state width="1483" height="157" key="GridCell.Tab.0.right" timestamp="1604940942433">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1483" height="157" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604575289625" />
+    <state width="1483" height="157" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1604940942433" />
     <state x="531" y="83" key="RollbackChangesDialog" timestamp="1604232494095">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

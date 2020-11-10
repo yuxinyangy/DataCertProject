@@ -32,10 +32,10 @@ func init() {
 	beego.Router("/user_kyc.html",&controllers.UserKycController{})
 	//实名认证
 	beego.Router("/user_kyc",&controllers.UserKycController{})
-	//短信验证码登入
-	beego.Router("login_sms.html",&controllers.SmsLoginController{})
-	//发送验证码
-	beego.Router("/send_sms",&controllers.SendSmsController{})
-	//调用登入接口,执行手机号和验证码登入
-	beego.Router("/login_sms",&controllers.SmsLoginController{})
+	//短信验证码登录页面
+	beego.Router("/login_sms.html", &controllers.SmsLoginController{})
+	//发送验证码短信息
+	beego.Router("/send_sms", &controllers.SendSmsController{})
+	//调用登录接口,执行手机号和验证码登录
+	beego.Router("/login_sms", &controllers.SmsLoginController{})
 }
